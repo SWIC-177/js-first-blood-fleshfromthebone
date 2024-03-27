@@ -1,7 +1,9 @@
-function greet(name) {
-return "hello," + name;
+const age = 22
+const name = "Rye"
+
+if (age >= 18) {
+    console.log ("Come in "+ name)
 }
-
-const greeting = greet("Rye")
-
-console.log (greeting);
+else {
+    console.log ("Get out")
+}
