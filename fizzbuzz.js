@@ -1,5 +1,5 @@
 let number = 0
-while (number < 100) {
+while (number <= 100) {
     number += 1
     if (moreNumber % 3==0) {
         console.log("Fizz")
@@ -13,7 +13,7 @@ while (number < 100) {
 }
 
 
-for (let moreNumber= 0; moreNumber < 100; moreNumber +=1) {
+for (let moreNumber= 0; moreNumber <= 100; moreNumber +=1) {
     if (moreNumber % 3==0) {
         console.log("Fizz")
     }
