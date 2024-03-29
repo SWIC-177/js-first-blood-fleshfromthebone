@@ -1,5 +1,4 @@
-const person = [personName= "John", personAge= 24,];
-  
+
   function verifyAdulthood(person) {
     if (personAge >= 18) {
         return `Welcome, ${personName}!`;
@@ -12,3 +11,5 @@ const person = [personName= "John", personAge= 24,];
   const adultMessage = verifyAdulthood(personName, personAge);
   
   console.log(adultMessage);
+
+  // note: if i was supposed to do part two on this code on this, oopsie :/. you. you can see what i attempted in weekten.js 
