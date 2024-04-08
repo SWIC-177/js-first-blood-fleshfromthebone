@@ -1,15 +1,29 @@
 
-  function verifyAdulthood(person) {
-    if (personAge >= 18) {
-        return `Welcome, ${personName}!`;
-    }
-    else {
-    return `You are not old enough to enter, ${personName}.`;
-    }
-  }
-  
-  const adultMessage = verifyAdulthood(personName, personAge);
-  
-  console.log(adultMessage);
+// simple declaration of function.
+function divNumbers (num1, num2) {
+  return num1 / num2;
+}
+console.log(divNumbers (12, 2))
 
-  // note: if i was supposed to do part two on this code on this, oopsie :/. you. you can see what i attempted in weekten.js 
+// 
+const multiplyNumbers =(val1, val2) => val1 * val2;
+console.log(multiplyNumbers(3,3))
+
+// Declaring a starting score and adding as it goes
+const startingScore = 5;
+let plusScore = startingScore
+
+
+function scorePrint(score) {
+  return `Total Score: ${score}`;
+}
+
+function numberRun (score, func) {
+  return func(score)
+}
+
+while (plusScore < 13) {
+  console.log(numberRun(plusScore, scorePrint));
+  plusScore += 3;
+}
+// This last bit was tricky, calling a function from within a while loop within a function, shows that you can chain functions together through nooks and crannies of code.
