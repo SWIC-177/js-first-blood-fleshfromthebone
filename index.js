@@ -1,29 +1,46 @@
+// I am not able to provide a video due to unseen events (dying internet) I shall leave notes throughout this code that explain what they do
 
-// simple declaration of function.
-function divNumbers (num1, num2) {
-  return num1 / num2;
+const people = [
+  {
+    id: 1,
+    name: "John Doe",
+    age: 23,
+  },
+  {
+    id: 2,
+    name: "Jane Doe",
+    age: 29,
+  },
+  {
+    id: 3,
+    name: "Jim Doe",
+    age: 34,
+  },
+  {
+    id: 4,
+    name: "Jill Doe",
+    age: 45,
+  },
+  {
+    id: 5,
+    name: "Jack Doe",
+    age: 56,
+  },
+  {
+    id: 6,
+    name: "Jenny Doe",
+    age: 67,
+  },
+];
+// function checks to see if the ID of anyone in the people array is an even number
+function renameOdds(p) {
+  for (let i = 0; i < p.length; i++) {
+    if (p[i].id % 2 !== 0) {
+      p[i].name = "Odd Name";
+    }
+  }
+
+  return p;
 }
-console.log(divNumbers (12, 2))
 
-// 
-const multiplyNumbers =(val1, val2) => val1 * val2;
-console.log(multiplyNumbers(3,3))
-
-// Declaring a starting score and adding as it goes
-const startingScore = 5;
-let plusScore = startingScore
-
-
-function scorePrint(score) {
-  return `Total Score: ${score}`;
-}
-
-function numberRun (score, func) {
-  return func(score)
-}
-
-while (plusScore < 13) {
-  console.log(numberRun(plusScore, scorePrint));
-  plusScore += 3;
-}
-// This last bit was tricky, calling a function from within a while loop within a function, shows that you can chain functions together through nooks and crannies of code.
+console.log(renameOdds(people));
