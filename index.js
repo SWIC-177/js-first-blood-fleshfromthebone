@@ -33,8 +33,13 @@ const people = [
   },
 ];
 // function checks to see if the ID of anyone in the people array is an even number
+
+//I am not getting errors on my end, but I have a good clue of what the errors posted on the class threads mean.
+
+
 function renameOdds(p) {
-  for (let i = 0; i < p.length; i++) {
+  //the code i++ increments a value by just one. ESlint would rather have a proper increment code so I changed it to a simple i+=1
+  for (let i = 0; i < p.length; i+=1) {
     if (p[i].id % 2 !== 0) {
       p[i].name = "Odd Name";
     }
@@ -42,5 +47,6 @@ function renameOdds(p) {
 
   return p;
 }
-
-console.log(renameOdds(people));
+//the function mutates the original value to people. and overwrites the data in them. A new variable was added (oddPeople), and the value assigned is the people array run through the function.
+const oddPeople = renameOdds(people)
+console.log(oddPeople);
