@@ -1,11 +1,6 @@
-const younger1 = 13;
-let younger2 = younger1;
+const randomString = "Cool whatever man"
 
-function incrementAge(age) {
-  return age + 1;
-}
+//takes string and converts all letters to lower case
+let otherString = randomString.toLowerCase()
 
-younger2 = incrementAge(younger2);
-
-console.log(`Younger1 is: ${younger1}`);
-console.log(`Younger2 is: ${younger2}`);
+console.log(otherString)

@@ -1,14 +1,6 @@
-const name = "John Doe";
-let otherName = name;
+const randomString = "Cool whatever man"
 
-console.log(`Name is: ${name}`);
-console.log(`Other name is: ${otherName}`);
+// Takes all letters in string and makes them all caps
+let otherString = randomString.toUpperCase()
 
-otherName = "Jane Doe";
-
-console.log(`Name is: ${name}`);
-console.log(`Other name is: ${otherName}`);
-
-otherName = 23;
-console.log(`Name is: ${name}`);
-console.log(`Other name is: ${otherName}`);
+console.log(otherString)
